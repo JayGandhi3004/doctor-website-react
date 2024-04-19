@@ -1111,6 +1111,7 @@ body {
 .choose .choose-img {
     position: relative;
     height: 500px;
+    background-position: center;
     width: 100%;
     background-repeat: no-repeat;
     background-image: url(../images/3.jpg);
@@ -1119,6 +1120,7 @@ body {
 .choose .choose-img2 {
     position: relative;
     height: 500px;
+    background-position: center;
     width: 100%;
     background-repeat: no-repeat;
     background-image: url(../images/choose2.jpg);
@@ -1141,6 +1143,7 @@ body {
     position: relative;
     height: 500px;
     width: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/about-img2.jpg);
 }

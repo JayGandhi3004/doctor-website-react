@@ -20,6 +20,10 @@
     .service .service-body .col-4 {
         margin-bottom: 30px;
     }
+
+    .choose .choose-icon2 li p {
+        left: 5% !important;
+    }
 }
 
 @media (max-width:1024px) {
@@ -36,6 +40,10 @@
 
     .nav-link .i {
         margin-left: 5px;
+    }
+
+    .choose .choose-icon2 li p {
+        left: 2% !important;
     }
 
     .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item a {
@@ -320,6 +328,7 @@
 
     .choose .choose-icon li p {
         left: 2% !important;
+        width: 25px !important;
     }
 
     .choose .choose-img button {
@@ -417,6 +426,15 @@
     .doctor .doctor-row {
         display: flex;
         justify-content: center;
+    }
+
+    .choose .choose-data p {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .choose .choose-icon2 li p {
+        width: 25px !important;
     }
 
     .subscribe .subscribe-body .subscribe-btn button {
@@ -575,7 +593,7 @@
 
     .choose .choose-img button {
         left: 45% !important;
-        top: 30% !important;
+        top: 35% !important;
     }
 
     .choose .col-4 {
