@@ -43,19 +43,19 @@ const About = () => {
                 </div>
                 <ul className="choose-icon2">
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     Consultations Wif Specialized Pediatricians
                   </li>
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     A Wide Range Of Laboratory Studies
                   </li>
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     Ultrasound Examination
                   </li>
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     ECG, Echocardiography
                   </li>
                 </ul>
@@ -179,19 +179,19 @@ const About = () => {
                 </div>
                 <ul className="choose-icon">
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     Consultations Wif Specialized Pediatricians
                   </li>
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     A Wide Range Of Laboratory Studies
                   </li>
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     Ultrasound Examination
                   </li>
                   <li>
-                    <FontAwesomeIcon className='i' icon={faCheck} />
+                    <p><FontAwesomeIcon className='i' icon={faCheck} /> </p>
                     ECG, Echocardiography
                   </li>
                 </ul>

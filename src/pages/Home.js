@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/style.css';
 import '../css/media.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,9 +28,22 @@ import news3 from '../images/3.jpg'
 import Subscribe from './Subscribe';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 
 const Home = () => {
+    const [startCountUp, setStartCountUp] = useState(false);
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setStartCountUp(true);
+        }
+    }, [inView]);
     return (
         <div>
             <section className="banner-area">
@@ -177,7 +190,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="expert">
+            <section className="expert" ref={ref}>
                 <div className="container">
                     <div className="row">
                         <div className="col-3">
@@ -186,7 +199,15 @@ const Home = () => {
                                     <FontAwesomeIcon className='i' icon={faUserCircle} />
                                 </div>
                                 <div className="expert-col-6-h3">
-                                    <h3>540 +</h3>
+                                    <h3>
+                                        {startCountUp && (
+                                            <CountUp
+                                                start={0}
+                                                end={540}
+                                                duration={2.5}
+                                                separator=""
+                                            />
+                                        )} +</h3>
                                 </div>
                                 <div className="expert-col-6-p">
                                     <p>Expert Doctors</p>
@@ -199,7 +220,14 @@ const Home = () => {
                                     <FontAwesomeIcon className='i' icon={faCheckCircle} />
                                 </div>
                                 <div className="expert-col-6-h3">
-                                    <h3>990 +</h3>
+                                    <h3> {startCountUp && (
+                                        <CountUp
+                                            start={0}
+                                            end={990}
+                                            duration={2.5}
+                                            separator=""
+                                        />
+                                    )} +</h3>
                                 </div>
                                 <div className="expert-col-6-p">
                                     <p>Successful Story</p>
@@ -212,7 +240,14 @@ const Home = () => {
                                     <FontAwesomeIcon className='i' icon={faTrophy} />
                                 </div>
                                 <div className="expert-col-6-h3">
-                                    <h3>3500 +</h3>
+                                    <h3> {startCountUp && (
+                                        <CountUp
+                                            start={0}
+                                            end={3500}
+                                            duration={2.5}
+                                            separator=""
+                                        />
+                                    )} +</h3>
                                 </div>
                                 <div className="expert-col-6-p">
                                     <p>Global Presence</p>
@@ -225,7 +260,14 @@ const Home = () => {
                                     <FontAwesomeIcon className='i' icon={faCertificate} />
                                 </div>
                                 <div className="expert-col-6-h3">
-                                    <h3>54 +</h3>
+                                    <h3> {startCountUp && (
+                                        <CountUp
+                                            start={0}
+                                            end={54}
+                                            duration={2.5}
+                                            separator=""
+                                        />
+                                    )} +</h3>
                                 </div>
                                 <div className="expert-col-6-p">
                                     <p>Experiences</p>
@@ -796,7 +838,7 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perferendis deleniti illum necessitati voluptates ipsum, ratione dolorum veritatis minus mollitia placeat</p>
                     </div>
                     <div className="news-body">
-                        <div className="row">
+                        <div className="row news-row">
                             <div className="col-4">
                                 <div className="card">
                                     <img src={news1} className="card-img-top" alt="news1" />

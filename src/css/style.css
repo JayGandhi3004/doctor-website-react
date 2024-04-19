@@ -210,7 +210,7 @@ body {
     position: absolute;
     left: -320px;
     top: -2px;
-    width: 658px;
+    width: 660px;
     height: 84px;
     background-color: #19ce67;
     z-index: -1;
@@ -302,21 +302,21 @@ body {
     opacity: 1;
     visibility: visible;
     top: 70%;
-    left: 24%;
+    left: 21%;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item:hover:nth-child(2) ul {
     opacity: 1;
     visibility: visible;
     top: 70%;
-    left: 30%;
+    left: 28%;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item:hover:nth-child(3) ul {
     opacity: 1;
     visibility: visible;
     top: 70%;
-    left: 38%;
+    left: 37%;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item:hover:nth-child(4) ul {
@@ -330,21 +330,21 @@ body {
     opacity: 1;
     visibility: visible;
     top: 70%;
-    left: 53%;
+    left: 54%;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item:hover:nth-child(6) ul {
     opacity: 1;
     visibility: visible;
     top: 70%;
-    left: 60%;
+    left: 61%;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item:hover:nth-child(7) ul {
     opacity: 1;
     visibility: visible;
     top: 70%;
-    left: 69%;
+    left: 71%;
 }
 
 .nav-area .navbar-area .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
@@ -818,7 +818,7 @@ body {
     margin-bottom: 15px;
 }
 
-.choose .choose-icon2 li .i {
+.choose .choose-icon2 li p {
     display: inline-block;
     line-height: 21px;
     background-color: #def5ee;
@@ -826,6 +826,7 @@ body {
     height: 25px;
     font-size: 16px;
     text-align: center;
+    align-content: center;
     border-radius: 50%;
     color: #19ce67;
     transition: all 0.5s;
@@ -833,9 +834,10 @@ body {
     left: 7%;
 }
 
-.choose .choose-icon2 li:hover .i {
+.choose .choose-icon2 li:hover p {
     background-color: #19ce67;
     color: #ffffff;
+    transform: rotateY(360deg);
 }
 
 /* ======expert====== */
@@ -941,6 +943,9 @@ body {
     background-color: #ffffff;
     transition: all 0.5s;
     border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 20px;
 }
 
 .service .service-body .service-card::before {
@@ -952,7 +957,6 @@ body {
     height: 2px;
     background-color: #19ce67;
     border-radius: 4px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: -1;
 }
@@ -2465,7 +2469,7 @@ footer .footer-data-4 .footer-body-4 ul li .footer-last-p p:hover {
     border-radius: 4px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     padding: 100px 0;
-    margin: auto;
+    margin: 100px auto;
     max-width: 600px;
 }
 
